@@ -1,0 +1,101 @@
+/* components/Header.module.css */
+
+.nav {
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  position: relative;
+  height: 100%;
+}
+
+.logo {
+  /* border: 2px solid black; */
+  display: flex;
+}
+
+.menuList {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.menuList li {
+  list-style-type: none;
+}
+
+.menuList li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.menuList li a:hover {
+  color: blue;
+  text-decoration: underline;
+}   
+
+.menuIcon {
+  display: none;
+  color: black;
+}
+
+.menuIcon i {
+  color: #fff;
+  font-size: 30px;
+}
+
+@media (max-width: 700px) {
+  .menuList {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #f4f9f9;
+    gap: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 11px -3px rgba(0, 0, 0, 0.36);
+    /* display: none; */
+  }
+
+  .menuList li {
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .menuList.open {
+    transition: all 0.5s;
+  }
+  .menuList.show {
+    transition: all 0.5s;
+    visibility: hidden;
+  }
+
+  .menuList.not {
+    visibility: visible;
+  }
+}
+
+
+
+
+
+/* -----------------footer--------- */
+.text_decoration {
+color: black;
+  text-decoration: none;
+}
+
+.text_decoration:hover {
+  text-decoration: underline;
+}
+
+

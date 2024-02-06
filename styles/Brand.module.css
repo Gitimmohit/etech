@@ -1,0 +1,831 @@
+/* --------------------start--------- */
+
+.content {
+  display: flex;
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* padding: 40px; */
+  width: 100%;
+  height: 100%;
+}
+
+.para {
+  width: 100%;
+}
+.img {
+  /* display: flex; */
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* align-items: center; */
+}
+.container {
+  /* margin: 0 auto; */
+  width: 100%;
+  /* height: 80vh; */
+}
+
+.mycarousel {
+  max-height: 420px;
+  min-height: 420px;
+  text-align: left;
+  width: 75%;
+  background: linear-gradient(180deg, #6161ff 0%, #6161ff 25%, #5034ff 100%);
+  border-radius: 20px;
+  padding: 20px;
+}
+.carouselimage {
+  min-height: 170px;
+  max-height: 170px;
+  display: flex;
+  flex-direction: row;
+  margin-top: -50px;
+}
+
+.carsimgfirst {
+  width: 75%;
+}
+
+.carsimgsecond {
+  height: 130px;
+  width: 20%;
+  border-radius: 10px;
+}
+.carouselwidth {
+  width: 80%;
+  min-height: 100px;
+  max-height: 100px;
+}
+
+.carsimgthird {
+  width: 20%;
+}
+.Carouseldescription {
+  min-height: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  color: white;
+  font-size: 21px;
+}
+.Carouseltitle {
+  color: white;
+  font-size: "0.875rem";
+  margin: "10px";
+}
+
+.Carouseldots {
+  margin: 0;
+  padding: 0;
+  list-style: "none";
+  text-align: left;
+}
+
+.dotstyle {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1000px) {
+.mycarousel{
+margin-top: 20px;
+}
+}
+
+@media only screen and (max-width: 750px) {
+  .mycarousel {
+    margin-left: 17%;
+    width: 60%;
+    height: 600px;
+  }
+  .mycarousel {
+    margin-top: 60px;
+    max-height: 500px;
+    margin-top: 60px;
+  }
+  .carouselimage {
+    position: relative;
+    bottom: 500px;
+  }
+
+  .carsimgfirst {
+    width: 35%;
+  }
+  .carsimgsecond {
+    border: 4px solid rgb(255, 255, 255);
+    height: 130px;
+    width: 25%;
+    border-radius: 50%;
+  }
+
+  .img {
+    /* display: flex; */
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .Carouseldescription {
+    margin-top: 80px;
+    font-size: 15px;
+    min-height: 250px;
+    max-height: 250px;
+  }
+
+  .Carouseldots {
+    margin: 0;
+    padding: 0;
+    list-style: "none";
+    text-align: center;
+  }
+
+  .carouselwidth {
+    width: 100%;
+    min-height: 100px;
+    max-height: 100px;
+  }
+
+}
+
+.Carouseltitle {
+  color: white;
+  font-size: 14px;
+  margin: "10px";
+}
+.topspan{
+  display: block;
+  margin: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .mycarousel {
+    /* margin-left: 17%; */
+    width: 80%;
+    height: 600px;
+  }
+  .mycarousel {
+    max-height: 500px;
+    margin-top: 40px;
+  }
+
+  .carsimgfirst {
+    width: 45%;
+  }
+  .carsimgsecond {
+    border: 4px solid rgb(255, 255, 255);
+    height: 130px;
+    width: 30%;
+    border-radius: 50%;
+  }
+
+  .Carouseltitle {
+    color: white;
+    font-size: "0.575rem";
+    /* margin: '10px'; */
+  }
+
+  .Carouseldescription {
+    min-height: 350px;
+    max-height: 350px;
+    overflow: hidden;
+    color: white;
+    font-size: 21px;
+  }
+  
+
+  }
+
+
+@media only screen and (max-width: 600px) {
+  .mycarousel {
+    padding: 0px;
+  }
+
+  .topspan{
+    font-size: 14px;
+    display: block;
+    margin-top: 100px;
+  }
+
+}
+
+.myBox {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 500px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: white;
+  transition: box-shadow 0.3s;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.myBox:hover {
+  box-shadow: #a0e9ff 0px 2px 8px 0px, #a0e9ff 0px 4px 16px 0px;
+}
+
+/* ----------brand responsive -------start---- */
+.grid {
+  margin-top: 10px;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: auto auto auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+/* ---------The Work OS that lets you--------- */
+.maindiv {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 250px;
+  margin-top: 20px;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 700px) {
+  .maindiv {
+    flex-direction: column;
+  }
+}
+
+.mainfirst {
+  width: 50%;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+.mainsecond {  
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  align-items: start;
+
+  width: 50%;
+  font-size: 22px;
+  color: #aaa;
+}
+@media only screen and (max-width: 700px) {
+  .mainfirst {
+    width: 100%;
+  }
+  .mainsecond {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mainfirst {
+    font-size: 26px;
+  }
+  .mainsecond {
+    font-size: 12px;
+  }
+}
+
+/* ------------end------------------end--------- */
+
+/* ------------video -------- */
+
+.videoLogo {
+  display: flex;
+  height: auto;
+  margin-top: 10px;
+  gap: 5%;
+}
+.logoLeft {
+  display: flex;
+  width: 50%;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 1px 2px 6px 0px rgba(160,233,255,1);
+
+}
+
+.logoRight {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .videoLogo {
+    flex-direction: column;
+  }
+  .logoLeft {
+    width: 100%;
+  }
+  .logoRight {
+    width: 100%;
+  }
+}
+
+/* ----------------end---------- */
+
+/* --------animation------- */
+
+.animation {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  gap: 10px;
+  color: white;
+  /* background-color: white; */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    166deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(17, 10, 96, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  height: auto;
+}
+
+
+.animationdirection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+  .animation {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .animationdirection {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+
+/* -----------end animation */
+
+/* -------integration--------- */
+
+.integration {
+  margin-top: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.integrationTop {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.integrationfirst {
+  font-size: 44px;
+  color: black;
+}
+
+.secondspan {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 770px) {
+  .integrationfirst {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .integration {
+    width: 100%;
+  }
+  .secondspan {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .integrationfirst {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 432px) {
+  .integrationfirst {
+    font-size: 18px;
+  }
+}
+
+/* ---------end-------- */
+
+/* --------TabBar---start------- */
+.tabbarmain {
+  /* width: 60%; */
+  /* height: 70px; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* margin-top: 20px; */
+  gap: 2px;
+  border-radius: 10px;
+  overflow-x: auto;
+  /* box-shadow: 0px 0px 20px 0px rgba(166,246,255,1); */
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.tabhover {
+  min-width: 100px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.tabhover:hover {
+  background: #eef5ff;
+}
+
+.tabbarcontent {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.contentfirst {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+}
+.contentsecond {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenttext {
+  color: #333333;
+  font-size: 20px;
+}
+@media only screen and (max-width: 700px) {
+  .tabbarcontent {
+    flex-direction: column;
+  }
+  .contentfirst {
+    width: 100%;
+  }
+  .contentsecond {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contenttext {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .contenttext {
+    font-size: 10px;
+  }
+}
+/* ----------tabbar --------end---- */
+
+/* ------our products- start----------- */
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProductComponent {
+  margin-top: 30px;
+  /* height: 70%; */
+  width: auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 10px;
+}
+.productcontent {
+  /* height: 30%; */
+  text-align: center;
+  font-size: 44px;
+}
+
+.productspan {
+  display: block;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .ProductComponent {
+    flex-wrap: wrap;
+    /* text-align: center; */
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 571px) {
+  .productcontent {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .productcontent {
+    font-size: 24px;
+  }
+}
+
+/* ---------our product end------- */
+
+/* ------------VideoContainer------- */
+
+.VideoContainer {
+  /* height: 600px; */
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: rgb(236, 239, 248);
+}
+
+.StyledDiv {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: 0 20px;
+  width: 80%;
+  position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+  .StyledDiv {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* ------------VideoContainer---- end--- */
+
+/* -------SliderMain   ----  Customers  ---- */
+.Customers {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  /* height: 1400px;   */
+}
+.SliderMain {
+  display: flex;
+  flex-direction: row;
+  /* height: 40%; */
+  width: 100%;
+}
+
+.SliderMaincontent {
+  width: auto;
+}
+.slidecontent {
+  display: block;
+  color: black;
+  font-weight: bold;
+  font-size: 44px;
+  text-align: start;
+  /* margin: 10px 20px;
+  line-height: 50px; */
+}
+.spanresize{
+  display: block;
+  }
+
+@media only screen and (max-width: 500px) {
+  .spanresize{
+    display: block;
+    font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+  .SliderMain {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .slidecontent {
+    font-size: 34px;
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+  .slidecontent {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .slidecontent {
+    font-size: 20px;
+  }
+}
+
+.Supporting {
+  display: flex;
+  flex-direction: row;
+  /* height: 60%; */
+  width: 100%;
+}
+
+.Supportingcontent {
+  width: 40%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Supportingsecond {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sprtcontent {
+  height: 20%;
+  font-size: 38px;
+}
+
+@media only screen and (max-width: 850px) {
+  .Supporting {
+    flex-direction: column;
+  }
+  .Supportingcontent {
+    width: 100%;
+  }
+  .Supportingsecond {
+    width: 100%;
+  }
+  .sprtcontent {
+    font-size: 30px;
+  }
+}
+
+.Supportingfont {
+  font-size: 18px;
+}
+
+.supportflex {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.contentflex {
+  display: flex;
+  width: 20%;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.supportimages{
+  height: 25%;  
+}
+
+@media only screen and (max-width: 1350px) {
+  .contentflex {
+    flex-direction: column;
+    gap: 0px;
+    width: 33%;
+  }
+  .supportimages{
+    height: 20%;  
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .supportimages{
+    min-height: 25%;  
+    min-width: 25%;
+    width: 40%;
+  }
+}
+
+
+
+.carouselDiv {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .carouselDiv {
+    width: 80%;
+  }
+}
+
+/* --------end --SliderMain   ----  Customers---- */
+
+/* ------------Award----- */
+.Award {
+  display: flex;
+  flex-direction: column;
+}
+.awardfirst {
+  display: flex;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+}
+.awardcontent {
+  text-align: center;
+  font-size: 36px;
+}
+.AwardSecond {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 570px) {
+  .awardcontent {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .AwardSecond {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* --------end----Award----- */
+
+/* --------Deliver----------- */
+.Deliver {
+  margin-top: 20px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    166deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(17, 10, 96, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------end delivery */

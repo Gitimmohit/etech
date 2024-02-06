@@ -1,0 +1,40 @@
+/*------------------ Award Feature css */
+
+.award {
+  border-radius: 10px;
+  width: 286px;
+  height: 310px;
+  padding: 5px 22px;
+  background: white;
+  transition: box-shadow 0.3s;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.award:hover {
+  box-shadow: #a0e9ff 0px 2px 8px 0px, #a0e9ff 0px 4px 16px 0px;
+}
+
+.CenterDiv {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.CenterDivcontent {
+  height: 25%;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+.content_two {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 400px) {
+  .grid {
+    grid-template-columns: auto auto auto;
+  }
+}
