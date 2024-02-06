@@ -79,10 +79,8 @@ const Animation = styled.div``;
 const Integration = styled.div``;
 const VideoContainer = styled.div``;
 const StyledDiv = styled.div``;
-const Customers = styled.div`
-border:2px solid black`;
-const SliderMain = styled.div`
-border:20px solid green`;
+const Customers = styled.div``;
+const SliderMain = styled.div``;
 const Supporting = styled.div``;
 const Award = styled.div``;
 const Deliver = styled.div``;
